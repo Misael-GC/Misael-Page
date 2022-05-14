@@ -63,6 +63,11 @@ ul{
     color: var(--principal-white);
 }
 
+.principal-header nav ul li a:active{
+    color: red;
+}
+
+
 .principal-header nav ul li a .photo-right{
     width: 30px;
     border-radius: 50%;
