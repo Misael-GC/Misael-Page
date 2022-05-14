@@ -1,0 +1,14 @@
+@media(min-width: 700px){
+    .fa-solid{
+        padding: 0 15px;
+    }
+
+    .principal-nav-left img{
+        margin-left: 2px;
+    }
+
+    .fa-linkedin{
+        margin-top: 10px;
+    }
+
+}

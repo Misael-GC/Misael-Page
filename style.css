@@ -150,6 +150,7 @@ ul{
     border-radius: 3px;
     background: var(--secondary-black);
     color: var(--principal-white);
+    border: 1px solid var(--gray);
 }
 
 .main-section-barra .barra-1 .barra-1__exp img{
@@ -170,6 +171,7 @@ ul{
     border-radius: 15px;
     background: var(--secondary-black);
     color: var(--principal-white);
+    border: 1px solid var(--gray);
 }
 
 
@@ -281,6 +283,7 @@ aside{
     color: var(--principal-white);
 }
 
+/*-----------------------*/
 
 @media(min-width: 700px){
     .fa-solid{
