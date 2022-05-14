@@ -1,0 +1,258 @@
+/* Forma de poner las declaraciones 
+1. Pocisionamiento
+2. Modelo de caja 
+3. Tipografía --- fuentes, tamaño de fuentes
+4. Temas visuales ----> shadom box, border radius
+5. Otros
+*/
+:root{
+    --principal-black: #000000;
+    --secondary-black: #373737;
+    --gray: #464646;
+    --principal-white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ---------------------------------------------------Header-right------------------------------------------------------ */
+.principal-header{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 56px;
+    /* width: 100%; */
+    min-width: 320px;
+    padding: 0 10px;
+    background:var(--principal-black);
+}
+/* ---------------------nav-----right-------------- */
+.principal-header .principal-nav-right{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    background: var(--principal-black);
+}
+
+.principal-header nav ul{
+    display: flex;
+    margin: 10px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-header .principal-nav-right ul li {
+    margin: 10px 5px;
+}
+
+.principal-header nav ul li a{
+    font-weight: 500;
+    color: var(--principal-white);
+}
+
+.principal-header nav ul li a .photo-right{
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* ------------nav-left------------------ */
+
+.principal-header .principal-nav-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    background: var(--principal-black);
+}
+
+
+.principal-nav-left img{
+    width: 30px;
+    height: 30px;
+}
+
+.principal-nav-left p{
+    margin-left: 1px;
+    font-weight: 500;
+    color: var(--principal-white);
+}
+
+/* ---------------------barra de opciones-------------------- */
+.main-container{
+    display: block;
+    background-color: var(--principal-black);
+}
+
+.main-container .main-section-barra{
+    display: flex;
+    height: 40px;
+    overflow-x:scroll; /*crea la opcion de deslizar para ver otras tarjetas*/
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-section-barra .barra-1{
+    /* display: block; */
+    position: relative;
+    scroll-snap-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh; /*Modifica aca el tamaño*/
+    min-width: 800px; /*Modifica este para hacer crecer el scroll aumentalo*/
+    margin: 0px auto 5px;
+    padding:8px 5px;
+    background: var(--principal-black);
+}
+
+.main-section-barra .barra-1 .barra-1__exp{
+    width: 100%;
+    padding: 5px 12px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    background: var(--secondary-black);
+    color: var(--principal-white);
+}
+
+.main-section-barra .barra-1 .barra-1__exp img{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    padding: auto;
+}
+
+.main-section-barra .barra-1 .barra_exp{
+    width: 100%;
+    padding: 5px 5px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background: var(--secondary-black);
+    color: var(--principal-white);
+}
+
+
+.main-section-barra .barra-1 .barra_exp:hover{
+    background: var(--principal-white);
+    color: var(--principal-black);
+}
+
+.main-section-barra .barra-1 .barra_comentarios{
+    width: 100%;
+    padding: 5px 5px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: dodgerblue;
+}
+
+.main-videos{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(auto-fill, 320px); /*si hace scroll modifica este*/
+    grid-template-rows: 250px;
+    justify-content: center;
+    align-items: center;
+    background: var(--principal-black);
+}
+
+
+
+/* ------------------------videos-proyectos-------------------- */
+.videos-container{
+    width: 90%;
+    cursor: pointer; 
+    margin: 10px auto;
+}
+
+.videos-container:hover{
+    width: 200px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.img-photo-perfil{
+    width: 100%;
+    height: 140px;
+    border-radius: 2px;
+    object-fit: cover; /* Adapta la imagen en el width y width, lo hace ver en su estado original*/
+}
+
+ .img-project  {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.info-project div p{
+    margin-left: 10px;
+}
+
+.info-project-2 p{
+    background:#181818;
+    color: #aaaaaa; 
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.info-project{
+    width: 100%; /*241px;*/
+    display: flex;
+    background:var(--principal-black);
+    color: var(--principal-white);
+    font-weight:500;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    padding: 10px 12px 11px 1px;
+    cursor: pointer;
+}
+
+/* ---------------------------footer--------------- */
+aside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 7vh;
+    background-color:var(--secondary-black);
+}
+.aside-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aside-icon .fa-brands{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.aside-icon p{
+    margin:5px auto 8px;
+    font-weight: 500;
+    color: var(--principal-white);
+}
