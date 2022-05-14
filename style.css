@@ -7,7 +7,7 @@
 */
 :root{
     --principal-black: #000000;
-    --secondary-black: #373737;
+    --secondary-black: #272727;
     --gray: #464646;
     --principal-white: #ffffff;
 }
@@ -78,6 +78,14 @@ ul{
     background: var(--principal-black);
 }
 
+.fa-solid{
+    padding: 0 1px;
+    /* padding-right:20px ; */
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--principal-white);
+    margin-right: 1px;
+}
 
 .principal-nav-left img{
     width: 30px;
@@ -247,7 +255,7 @@ aside{
     gap: 10px;
     width: 100%;
     min-height: 7vh;
-    background-color:var(--secondary-black);
+    background-color:var(--secondary-black); 
 }
 .aside-icon{
     display: flex;
@@ -259,7 +267,7 @@ aside{
 
 .aside-icon .fa-brands{
     font-size: 25px;
-    color: #ffffff;
+    color: var(--principal-white);
 }
 
 .aside-icon p{
@@ -268,6 +276,86 @@ aside{
     color: var(--principal-white);
 }
 
-/* .main-container  .main-section-barra{
-    overflow-x:unset; quitar el scroll
-} */
+
+@media(min-width: 700px){
+    .fa-solid{
+        padding: 0 15px;
+    }
+
+    .principal-nav-left img{
+        margin-left: 2px;
+    }
+
+    .fa-linkedin{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media(min-width: 1000px){
+
+    .principal-nav-left img{
+        margin-left: 25px;
+    }
+
+    .fa-solid{
+        padding: 0 15px;
+        padding-right:20px ;
+        margin-right: 1px;
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--principal-white);
+    }
+
+    .main-section-barra{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-section-barra .barra-1{
+        /* display: block;  */
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 5vh; /*Modifica aca el tamaño*/
+        min-width: 800px; /*Modifica este para hacer crecer el scroll aumentalo*/
+        margin: 0px 0px 10px 30px;
+        padding: 0 50px;
+        background: var(--principal-black);
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .main-videos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px); /*si hace scroll modifica este*/
+        grid-template-rows: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: calc(-1%);
+        left: calc(10px);
+        width: 50px;
+        min-height: 106vh;
+        background-color:var(--principal-black);
+    }
+
+    .main-container  .main-section-barra{
+        overflow-x:unset; 
+    } 
+}
