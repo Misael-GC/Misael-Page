@@ -234,7 +234,7 @@ ul{
 }
 
 .info-project-2 p{
-    background:#181818;
+    background: var(--principal-black);
     color: #aaaaaa; 
     padding-left: 5px;
     padding-bottom: 10px;
