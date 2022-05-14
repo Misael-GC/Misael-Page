@@ -98,10 +98,20 @@ ul{
 
 .main-container .main-section-barra{
     display: flex;
-    height: 40px;
+    min-height: 30px;
     overflow-x:scroll; /*crea la opcion de deslizar para ver otras tarjetas*/
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+}
+
+
+.main-container .main-section-barra::-webkit-scrollbar{ /*decorar el scroll*/
+    background: red; /*decorar el scroll*/
+    height: 1px;
+}
+
+.main-container .main-section-barra::-webkit-scrollbar-thumb{
+    background: black;
 }
 
 .main-section-barra .barra-1{
@@ -111,12 +121,13 @@ ul{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 7vh; /*Modifica aca el tamaño*/
+    height: 5vh; /*Modifica aca el tamaño*/
     min-width: 800px; /*Modifica este para hacer crecer el scroll aumentalo*/
     margin: 0px auto 5px;
     padding:8px 5px;
     background: var(--principal-black);
 }
+
 
 .main-section-barra .barra-1 .barra-1__exp{
     width: 100%;
@@ -256,3 +267,7 @@ aside{
     font-weight: 500;
     color: var(--principal-white);
 }
+
+/* .main-container  .main-section-barra{
+    overflow-x:unset; quitar el scroll
+} */
