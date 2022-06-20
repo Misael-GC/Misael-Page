@@ -111,7 +111,7 @@ ul{
 
 .main-container .main-section-barra{
     display: flex;
-    min-height: 30px;
+    min-height: 40px;
     overflow-x:scroll; /*crea la opcion de deslizar para ver otras tarjetas*/
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -262,7 +262,8 @@ aside{
     gap: 10px;
     width: 100%;
     min-height: 7vh;
-    background-color:var(--secondary-black); 
+    background-color:var(--secondary-black);
+    /* position:fixed; */
 }
 .aside-icon{
     display: flex;
