@@ -1,4 +1,17 @@
 @media(min-width: 700px){
+
+    /* .container-section_title{
+        display: flex;
+        min-width: 200px ;
+        height: 20px;
+        padding: 9px 120px;
+    }
+    
+    .container-section_title p{
+        color: #ffffff;
+    }
+     */
+
     .fa-solid{
         padding: 0 15px;
     }
